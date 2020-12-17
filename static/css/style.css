@@ -1,6 +1,30 @@
 /**********************************/
 
 
+/********** fFonts ***********/
+
+
+/**********************************/
+
+@font-face {
+    src: url(../fonts/kalpurush.ttf);
+    font-family: kalpurush;
+}
+
+@font-face {
+    src: url(../fonts/SolaimanLipi_04_07_05.ttf);
+    font-family: solaimanlipi;
+}
+
+@font-face {
+    src: url(../fonts/Shonar.ttf);
+    font-family: sonarbangla;
+}
+
+
+/**********************************/
+
+
 /********** General CSS ***********/
 
 
@@ -9,8 +33,8 @@
 body {
     font-size: 16px;
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: kalpurush, solaimanlipi, sonarbangla, Helvetica, sans-serif;
+    font-weight: 800;
     background: #ffffff;
     background-color: #ffffff;
 }
@@ -48,6 +72,19 @@ a:focus {
 }
 
 .h6 a {
+    color: #000000;
+    transition: 0.5s;
+}
+
+.h5 a:hover,
+a:active,
+a:focus {
+    color: #ff2916;
+    outline: none;
+    text-decoration: none;
+}
+
+.h5 a {
     color: #000000;
     transition: 0.5s;
 }
@@ -581,7 +618,6 @@ input[type=text]:focus {
     width: 100%;
     transform-origin: 50% 65%;
     /* transition: transform .5s, filter .5s ease-in-out; */
-    filter: brightness(90%);
 }
 
 
@@ -596,7 +632,7 @@ input[type=text]:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 15px 10px 15px 20px;
+    padding: 10px 0px 5px 0px;
     background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .9));
     display: flex;
     align-items: flex-end;
@@ -606,13 +642,13 @@ input[type=text]:focus {
     display: block;
     width: 100%;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
     transition: .3s;
 }
 
 .top-news .tn-left .tn-title a {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -1372,6 +1408,46 @@ input[type=text]:focus {
     filter: brightness(95%);
     transform: scale(1.2);
 }
+
+
+/**********************************/
+
+
+/******** Category Page CSS *********/
+
+
+/**********************************/
+
+
+/* pagination css start  */
+
+.pagination>li>a {
+    background-color: white;
+    color: #fd2e1c;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: #000000;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination>.active>a {
+    color: white;
+    background-color: #fd2e1c !Important;
+    border: solid 1px #fd2e1c !Important;
+}
+
+.pagination>.active>a:hover {
+    background-color: #fd2e1c !Important;
+    border: solid 1px #fd2e1c;
+}
+
+
+/* pagination css end */
 
 
 /**********************************/
