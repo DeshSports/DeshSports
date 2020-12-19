@@ -30,11 +30,14 @@
 
 /**********************************/
 
+
+/* font-family: kalpurush, 'Montserrat' solaimanlipi, sonarbangla, Helvetica, sans-serif; */
+
 body {
     font-size: 16px;
     color: #000000;
-    font-family: kalpurush, solaimanlipi, sonarbangla, Helvetica, sans-serif;
-    font-weight: 800;
+    font-family: kalpurush, 'Montserrat' solaimanlipi, sonarbangla, Helvetica, sans-serif;
+    font-weight: 600;
     background: #ffffff;
     background-color: #ffffff;
 }
@@ -53,9 +56,9 @@ a:focus {
 }
 
 p {
+    font-weight: 350;
     padding: 0;
     margin: 0 0 15px 0;
-    color: #000000;
 }
 
 .h2 a {
@@ -331,16 +334,31 @@ h6 {
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
-    color: #ffffff;
+    color: #000000;
+    font-family: kalpurush;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    border-bottom: 2px solid #000000;
+    /* border-bottom: 2px solid #ff2828; */
     transition: none;
+    background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .5))
 }
 
-.nav-bar .dropdown-menu {
+.nav-bar .navbar .navbar-brand {
+    padding: 10px 10px 8px 10px;
+    color: #000000;
+}
+
+.nav-bar .navbar .navbar-brand:hover,
+.nav-bar .navbar .navbar-brand:active {
+    transition: none;
+    background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .5))
+}
+
+.nav-bar .nav-bar .dropdown-menu {
     margin-top: 0;
     border: 0;
     border-radius: 0;
@@ -349,7 +367,7 @@ h6 {
 @media (min-width: 768px) {
     .nav-bar,
     .nav-bar .navbar {
-        background: #ff2916 !important;
+        background: #dddddd !important;
     }
     .nav-bar .navbar-brand {
         display: none;
@@ -365,7 +383,7 @@ h6 {
     .nav-bar,
     .nav-bar .navbar {
         padding: 3px 0;
-        background: #ff2916 !important;
+        background: #dddddd !important;
     }
     .nav-bar a.nav-link {
         padding: 5px;
@@ -710,6 +728,19 @@ input[type=text]:focus {
 
 .top-news .slick-next::before {
     content: "\f105";
+}
+
+
+/* 1st lead second part  */
+
+.top-news .sec-lead {
+    font-size: medium;
+}
+
+@media screen and (max-width: 768px) {
+    .top-news .sec-lead {
+        font-size: large;
+    }
 }
 
 
