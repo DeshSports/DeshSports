@@ -36,7 +36,7 @@
 body {
     font-size: 16px;
     color: #000000;
-    font-family: kalpurush, 'Montserrat' solaimanlipi, sonarbangla, Helvetica, sans-serif;
+    font-family: kalpurush, solaimanlipi, sonarbangla, Helvetica, sans-serif;
     font-weight: 600;
     background: #ffffff;
     background-color: #ffffff;
@@ -75,6 +75,19 @@ a:focus {
 }
 
 .h6 a {
+    color: #000000;
+    transition: 0.5s;
+}
+
+.h3 a:hover,
+a:active,
+a:focus {
+    color: #ff2916;
+    outline: none;
+    text-decoration: none;
+}
+
+.h3 a {
     color: #000000;
     transition: 0.5s;
 }
@@ -252,11 +265,11 @@ h6 {
     max-width: 100%;
     max-height: 150px;
     transform-origin: 50% 65%;
-    transition: transform 1s, filter .25s ease-in-out;
+    transition: transform .5s, filter .25s ease-in-out;
 }
 
 .brand .b-logo a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .brand .b-ads {
@@ -336,7 +349,7 @@ h6 {
     padding: 10px 10px 8px 10px;
     color: #000000;
     font-family: kalpurush;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -367,7 +380,7 @@ h6 {
 @media (min-width: 768px) {
     .nav-bar,
     .nav-bar .navbar {
-        background: #dddddd !important;
+        background: #c5c5c5 !important;
     }
     .nav-bar .navbar-brand {
         display: none;
@@ -539,7 +552,7 @@ input[type=text]:focus {
 
 .breaking-news-bar .bar {
     /* transform: skewX(-20deg); */
-    background: #ff2916;
+    background: #ff3e2c;
     height: 30px;
     color: rgb(255, 255, 255);
 }
@@ -548,7 +561,7 @@ input[type=text]:focus {
     height: 30px;
     overflow: hidden;
     position: relative;
-    background: #000000;
+    background: #3d3d3d;
     color: rgb(255, 255, 255);
 }
 
@@ -578,7 +591,7 @@ input[type=text]:focus {
     transform: translateX(100%);
     -moz-animation: scroll-left 0.1s linear infinite;
     -webkit-animation: scroll-left 0.1s linear infinite;
-    animation: scroll-left 18s linear infinite;
+    animation: scroll-left 30s linear infinite;
 }
 
 @-moz-keyframes scroll-left {
@@ -660,14 +673,14 @@ input[type=text]:focus {
     display: block;
     width: 100%;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 400;
     transition: .3s;
 }
 
 .top-news .tn-left .tn-title a {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .top-news .tn-title a:hover {
@@ -764,7 +777,7 @@ input[type=text]:focus {
 
 .top-news .tab-news .tab-content {
     padding: 15px 8px 8px 8px;
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, .15);
 }
 
 .top-news .tab-news .tnn-news {
@@ -776,6 +789,7 @@ input[type=text]:focus {
 
 .top-news .tab-news .tnn-img {
     width: 100px;
+    padding: 6px;
 }
 
 .top-news .tab-news .tnn-img img {
@@ -788,8 +802,8 @@ input[type=text]:focus {
 
 .top-news .tab-news .tnn-title a {
     color: #000000;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 550;
     transition: all .3s;
 }
 
@@ -924,6 +938,8 @@ input[type=text]:focus {
     color: #ffffff;
     background: #000000;
     border-radius: 0;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .tab-news .nav.nav-pills .nav-link:hover,
@@ -934,13 +950,13 @@ input[type=text]:focus {
 
 .tab-news .tab-content {
     padding: 30px 15px 15px 15px;
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, .10);
 }
 
 .tab-news .tn-news {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     background: #ffffff;
 }
 
@@ -953,12 +969,12 @@ input[type=text]:focus {
 }
 
 .tab-news .tn-title {
-    padding: 10px 15px;
+    padding: 5px 7px;
 }
 
 .tab-news .tn-title a {
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     transition: all .3s;
 }
@@ -1136,7 +1152,7 @@ input[type=text]:focus {
 .single-news .sn-content {
     position: relative;
     width: 100%;
-    padding: 30px 0;
+    padding: 0 0;
 }
 
 .single-news .sn-content h1.sn-title {
@@ -1776,4 +1792,73 @@ input[type=text]:focus {
     .footer-bottom .template-by {
         text-align: center;
     }
+}
+
+
+/* social share css  */
+
+ul.socialIcons {
+    padding: 2px;
+    text-align: center;
+}
+
+.socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.socialIcons li a {
+    display: block;
+    padding: 4px;
+    min-width: 30px;
+    max-width: 32px;
+    height: 30px;
+    white-space: nowrap;
+    line-height: 3px;
+    /*it's working only when you write text with icon*/
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+}
+
+.socialIcons li i {
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 6px;
+    margin-right: 1 px;
+}
+
+.socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1px;
+}
+
+.socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .pinterest {
+    background-color: #c92228;
+    box-shadow: 0 0 16px #c92228;
+}
+
+.socialIcons .steam {
+    background-color: #666666;
+    box-shadow: 0 0 16px #666666;
 }
