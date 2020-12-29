@@ -1155,7 +1155,7 @@ input[type=text]:focus {
     padding: 0 0;
 }
 
-.single-news .sn-content h1.sn-title {
+.single-news .sn-content .sn-title {
     display: block;
     width: 100%;
     color: #000000;
