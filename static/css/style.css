@@ -622,6 +622,12 @@ input[type=text]:focus {
     }
 }
 
+@media (max-width: 768px) {
+    .breaking-news-bar {
+        display: none;
+    }
+}
+
 
 /**********************************/
 
