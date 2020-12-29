@@ -551,7 +551,7 @@ input[type=text]:focus {
     /* transform: skewX(-20deg); */
     background: #ff3e2c;
     height: 30px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .breaking-news-bar .marquee {
@@ -559,18 +559,18 @@ input[type=text]:focus {
     overflow: hidden;
     position: relative;
     background: #3d3d3d;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
 }
 
 .breaking-news-bar .marquee a {
-    color: #ff2916;
+    color: #ffffff;
     transition: 0.5s;
 }
 
 .breaking-news-bar .marquee a:hover,
 .marquee a:active,
 .marquee a:focus {
-    color: #ffffff;
+    color: #ff2916;
     outline: none;
     text-decoration: none;
 }
