@@ -781,13 +781,13 @@ input[type=text]:focus {
 .top-news .tab-news .tnn-news {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     background: #ffffff;
 }
 
 .top-news .tab-news .tnn-img {
     width: 100px;
-    padding: 3px;
+    padding: 4px;
 }
 
 .top-news .tab-news .tnn-img img {
