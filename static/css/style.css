@@ -252,7 +252,7 @@ h6 {
 /**********************************/
 
 .brand {
-    margin: 15px 0;
+    margin: 12px 0;
     background: #ffffff;
 }
 
@@ -262,14 +262,8 @@ h6 {
 }
 
 .brand .b-logo a img {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 150px;
-    transform-origin: 50% 65%;
-    transition: transform .5s, filter .25s ease-in-out;
-}
-
-.brand .b-logo a img:hover {
-    transform: scale(1.05);
 }
 
 .brand .b-ads {
@@ -301,11 +295,14 @@ h6 {
 }
 
 @media (max-width: 767.98px) {
+    .brand .b-logo a img {
+        max-width: 60%;
+    }
     .brand .b-logo,
     .brand .b-ads,
     .brand .social {
         text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     .ads {
         text-align: center;
@@ -707,7 +704,8 @@ input[type=text]:focus {
     z-index: 1;
     transition: .5s;
     color: #ffffff;
-    background: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .35), rgba(0, 0, 0, .4));
+    ;
     border-radius: 4px;
 }
 
