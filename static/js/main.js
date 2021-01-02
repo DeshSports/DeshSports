@@ -49,6 +49,13 @@
         $(this).find('.dropdown-menu').first().stop(true, true).delay(10).slideUp()
     });
 
+    // Marquee stop on hover
+    $('.marquee').hover(function() {
+        $(this).attr('scrollamount', 0);
+    }).mouseout(function() {
+        $(this).attr('scrollamount', 5);
+    });
+
 
     // Top News Slider
     $('.tn-slider').slick({
