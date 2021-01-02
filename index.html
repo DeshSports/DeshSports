@@ -96,7 +96,10 @@
     <div class="nav-bar">
         <div class="container">
             <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                <a href="#" class="navbar-brand">MENU</a>
+                <a href="#" class="navbar-brand menu">MENU</a>
+                <a href="index.html" class="navbar-brand mobile-logo d-none">
+                    <img class="img-circle" src="static/img/nav-logo1.png" alt="Logo" style="height:40px; background: transparent;">
+                </a>
                 <button type="button btn-dark" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"  ></span>
                 </button>
@@ -228,7 +231,7 @@
     <div class="breaking-news-bar mt-2">
         <div class="p-1 float-left bar" style="font-size: 18px; font-weight: 300;">শিরোনাম</div>
         <div class="marquee">
-            <p> <i class="fas fa-circle mb-2" style="font-size: 8px;"></i> <a href="#">ট্যাক্স ফাঁকি, ১ মোবাইলের আইএমইআই দিয়ে ৬০ অবৈধ মোবাইল বাজারে।</a> <i class="fas fa-circle mb-2" style="font-size: 10px;"></i> <a href="#"> বিচারককে মারা সেই হাজী ইকবালের ছেলেসহ দুজন রিমান্ডে।</a>                <i class="fas fa-circle mb-2" style="font-size: 8px;"></i> <a href="#"> কাউন্সিলর প্রার্থীর নাম ভাঙিয়ে জালালাবাদে বেপরোয়া চাঁদাবাজি</a> <i class="fas fa-circle mb-2" style="font-size: 8px;"></i> </p>
+            <p> <i class="fas fa-square mb-2" style="font-size: 12px;"></i> <a href="#">ট্যাক্স ফাঁকি, ১ মোবাইলের আইএমইআই দিয়ে ৬০ অবৈধ মোবাইল বাজারে।</a> <i class="fas fa-square mb-2" style="font-size: 12px;"></i> <a href="#"> বিচারককে মারা সেই হাজী ইকবালের ছেলেসহ দুজন রিমান্ডে।</a>                <i class="fas fa-square mb-2" style="font-size: 12px;"></i> <a href="#"> কাউন্সিলর প্রার্থীর নাম ভাঙিয়ে জালালাবাদে বেপরোয়া চাঁদাবাজি</a> <i class="fas fa-square mb-2" style="font-size: 12px;"></i> </p>
         </div>
     </div>
     <!-- Breaking News bar End-->
@@ -273,6 +276,8 @@
                         </div>
 
                     </div>
+                    <!-- leading category news end -->
+
                 </div>
                 <div class="tab-news col-lg-4 col-md-12">
 
@@ -282,7 +287,7 @@
                                 <div class="tnn-img">
                                     <img src="static/img/special/img4.jpg" />
                                 </div>
-                                <div class="tnn-title">
+                                <div class="h5" style="font-size: 18px; padding-left: 2px;">
                                     <a href="">আবারও মরুরবুকে লাল-সবুজের পতাকা উড়াবে বাংলা টাইগার্স</a>
                                 </div>
                             </div>
@@ -290,7 +295,7 @@
                                 <div class="tnn-img">
                                     <img src="static/img/special/img1.jpg" />
                                 </div>
-                                <div class="tnn-title">
+                                <div class="h5" style="font-size: 18px; padding-left: 2px;">
                                     <a href="">আবুধাবি টি-টেন লিগে মাঠ মাতাবেন একঝাঁক বাংলাদেশি </a>
                                 </div>
                             </div>
@@ -298,7 +303,7 @@
                                 <div class="tnn-img">
                                     <img src="static/img/special/img2.jpg" />
                                 </div>
-                                <div class="tnn-title">
+                                <div class="h5" style="font-size: 18px; padding-left: 2px;">
                                     <a href="">
                                         আবুধাবি টি-টেনে ৮ দলের হাল-হাকিকত</a>
                                 </div>
@@ -2042,15 +2047,13 @@
                     <div class="mn-list">
                         <h2>আরও পড়ুন...</h2>
                         <ul>
-                            <li><a href="">চট্টগ্রামে গলায় ফাঁস দিয়ে ব্যবসায়ীর আত্মহত্যা</a></li>
-                            <li><a href="">সোয়া লাখ ইয়াবাসহ ৪ রোহিঙ্গা ধরা</a></li>
-                            <li><a href="">চট্টগ্রামে শনাক্ত বেড়ে দেড়শ পার, আরও ১ মৃত্যু</a></li>
-                            <li><a href="">তরুণী অপহরণে নোয়াখালী গিয়ে চট্টগ্রামের ৫ যুবকের পেটে জেলের ভাত</a></li>
-                            <li><a href="">সুপ্তি খুন, ভাত খেতে আসা ‘আঙ্কেলকে’ খুঁজছে পুলিশ</a></li>
-                            <li><a href="">এস আলমের সুগন্ধার বাড়ি হঠাৎই স্তব্ধ, সুনসান নীরবতা</a></li>
-                            <li><a href="">চড়া দামে বাটার জুতা কিনে প্রতারিত ক্রেতা, সপ্তাহ না যেতেই করুণ দশা</a></li>
-                            <li><a href="">‘স্কুলের বেতন দিতেই হবে’— প্রশাসক সুজনের তোপের মুখে ছাত্রীরা</a></li>
-
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">চট্টগ্রামে গলায় ফাঁস দিয়ে ব্যবসায়ীর আত্মহত্যা</a></li>
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">সোয়া লাখ ইয়াবাসহ ৪ রোহিঙ্গা ধরা</a></li>
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">চট্টগ্রামে শনাক্ত বেড়ে দেড়শ পার, আরও ১ মৃত্যু</a></li>
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">তরুণী অপহরণে নোয়াখালী গিয়ে চট্টগ্রামের ৫ যুবকের পেটে জেলের ভাত</a></li>
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">সুপ্তি খুন, ভাত খেতে আসা ‘আঙ্কেলকে’ খুঁজছে পুলিশ</a></li>
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">এস আলমের সুগন্ধার বাড়ি হঠাৎই স্তব্ধ, সুনসান নীরবতা</a></li>
+                            <li style="font-size: 18px; font-weight: 400;"><a href="">চড়া দামে বাটার জুতা কিনে প্রতারিত ক্রেতা, সপ্তাহ না যেতেই করুণ দশা</a></li>
                         </ul>
                     </div>
                 </div>
@@ -2067,7 +2070,7 @@
             </a>
         </div>
         <div class="container">
-            <div class="row pt-3" style="border-top: 1px solid #000000;">
+            <div class="row pt-3" style="border-top: 1px solid #838383;">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
                         <h3 class="title">যোগাযোগ</h3>

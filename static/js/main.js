@@ -20,9 +20,19 @@
             $('.header-logo').addClass('d-none');
             $('.home').removeClass('d-none');
         }
-
     });
 
+    // Logo on navbar while scrolling mobile 
+    $(window).scroll(function() {
+
+        if ($(this).scrollTop() > 150) {
+            $('.mobile-logo').removeClass('d-none');
+            $('.menu').addClass('d-none');
+        } else {
+            $('.mobile-logo').addClass('d-none');
+            $('.menu').removeClass('d-none');
+        }
+    });
 
     // Dropdown on mouse hover ordinary
     // $(document).ready(function() {

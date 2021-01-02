@@ -667,7 +667,7 @@ input[type=text]:focus {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 10px 2px 10px;
     background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .9));
     display: flex;
     align-items: flex-end;
@@ -935,12 +935,12 @@ input[type=text]:focus {
     .main-news .mn-title a {
         width: 100%;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
     }
     .main-news .mn-title {
         position: absolute;
-        padding: 20px 10px 0px 10px;
+        padding: 10px 0px 0px 10px;
     }
 }
 
@@ -1600,7 +1600,7 @@ input[type=text]:focus {
 .footer .footer-start {
     text-align: center;
     padding: 22px;
-    background-color: #474747;
+    background-color: #dddddd;
 }
 
 .footer .footer-widget {
