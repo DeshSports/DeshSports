@@ -809,7 +809,7 @@ input[type=text]:focus {
 .top-news .tab-news .tnn-title a {
     color: #000000;
     font-size: 17px;
-    font-weight: 550;
+    font-weight: 500;
     transition: all .3s;
 }
 
@@ -1163,8 +1163,45 @@ input[type=text]:focus {
 .single-news {
     position: relative;
     width: 100%;
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
     margin-bottom: 15px;
+}
+
+.single-news .sn-content {
+    position: relative;
+    width: 100%;
+    padding: 0 0;
+}
+
+.single-news .sn-content .headline {
+    display: block;
+    width: 100%;
+    color: #333333;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.single-news .sn-content .subheadline {
+    color: #555555;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.single-news .sn-content .body {
+    color: #252525;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.single-news .sn-content .editorialblock {
+    margin-bottom: 10px;
+    padding: 10px 0px 0px 10px;
+}
+
+.single-news .sn-content .editorialblock .editorial {
+    color: rgb(70, 70, 70);
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .single-news .sn-img {
@@ -1174,18 +1211,6 @@ input[type=text]:focus {
 
 .single-news .sn-img img {
     width: 100%;
-}
-
-.single-news .sn-content {
-    position: relative;
-    width: 100%;
-    padding: 0 0;
-}
-
-.single-news .sn-content .sn-title {
-    display: block;
-    width: 100%;
-    color: #000000;
 }
 
 .single-news .sn-related {
@@ -1286,6 +1311,15 @@ input[type=text]:focus {
     content: "\f105";
 }
 
+@media (max-width: 768.98px) {
+    .single-news .sn-content .headline {
+        font-size: 29px;
+    }
+    .single-news .sn-content .editorialblock .editorial {
+        font-size: 15px;
+    }
+}
+
 
 /**********************************/
 
@@ -1338,7 +1372,7 @@ input[type=text]:focus {
 
 .sidebar .news-list .nl-item .nl-title a {
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     transition: all .3s;
 }
@@ -1393,7 +1427,7 @@ input[type=text]:focus {
 
 .sidebar .tab-news .tn-title a {
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     transition: all .3s;
 }
