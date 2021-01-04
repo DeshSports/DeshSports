@@ -1170,7 +1170,7 @@ input[type=text]:focus {
 .single-news .sn-content {
     position: relative;
     width: 100%;
-    padding: 0 0;
+    padding: 6px 8px 15px 9px;
 }
 
 .single-news .sn-content .headline {
@@ -1214,6 +1214,7 @@ input[type=text]:focus {
 }
 
 .single-news .sn-related {
+    margin-top: 20px;
     margin-bottom: 45px;
 }
 
